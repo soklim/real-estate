@@ -3,12 +3,12 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Real Estate</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/new/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,23 +19,22 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <link href="/css/main.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="/new/css/agency.min.css" rel="stylesheet">
 
 </head>
 <style>
-    .js-scroll-trigger{
-        text-shadow: 1px 1px #b5b2b1;
+    body{
+        font-family: 'Khmer OS Battambang';
     }
-
 </style>
 <body id="page-top">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" >Real Estate</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
@@ -43,28 +42,31 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services" ><strong>Services</strong></a>
+                    <a class="nav-link js-scroll-trigger" href="#services" ><strong>ទំព័រដើម</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio"><strong>Portfolio</strong></a>
+                    <a class="nav-link js-scroll-trigger" href="#portfolio"><strong>អំពីក្រុមហ៊ុន</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about"><strong>About</strong></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#team"><strong>Team</strong></a>
-                </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <strong>Dropdown</strong>
+                        <strong>គម្រោង</strong>
                     </a>
 
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class=" dropdown-item js-scroll-trigger" href="#">Action</a>
-                        <a class="dropdown-item js-scroll-trigger" href="#">Another action</a>
-                        <a class="dropdown-item js-scroll-trigger" href="#">Something else here</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <a class="dropdown-item" href="#">ប៉ូឡារីស</a>
+                        <a class="dropdown-item" href="#">សួនកំសាន្តបែបអ៊ឺរ៉ុប</a>
+                        <a class="dropdown-item" href="#">ដឺស្ដា មេរាហ្គាដិន</a>
+                        <a class="dropdown-item" href="#">ដឺស្តា ផ្លាទីនីម ម៉ាស្ទើរី</a>
+
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#team"><strong>ទំនាក់ទំនង</strong></a>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -74,12 +76,12 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in" style="padding-bottom: 30px">Find Your Dream House!</div>
+            <div class="intro-lead-in text-warning" style="padding-bottom: 30px;text-shadow: #0d0d0d;font-family: 'Khmer OS Muol'" > ស្វែករកផ្ទះក្នុងក្ដីស្រមៃរបស់លោកអ្នក!</div>
 {{--            <div class="intro-heading text-uppercase">It's Nice To Meet You</div>--}}
-            <div class="row">
+            <div class="row search_area">
                 <div class="col-sm-4" style="padding-bottom: 15px">
                     <select class="form-control">
-                        <option>Phnom Penh</option>
+                        <option>----- ទីតាំង -----</option>
                         <option>Phnom Penh</option>
                         <option>Phnom Penh</option>
                         <option>Phnom Penh</option>
@@ -87,7 +89,7 @@
                 </div>
                 <div class="col-sm-4" style="padding-bottom: 15px">
                     <select class="form-control">
-                        <option>Phnom Penh</option>
+                        <option>----- គម្រោង -----</option>
                         <option>Phnom Penh</option>
                         <option>Phnom Penh</option>
                         <option>Phnom Penh</option>
@@ -95,7 +97,7 @@
                 </div>
                 <div class="col-sm-4" style="padding-bottom: 30px">
                     <select class="form-control">
-                        <option>Phnom Penh</option>
+                        <option>------ ប្រភេទផ្ទះ ------</option>
                         <option>Phnom Penh</option>
                         <option>Phnom Penh</option>
                         <option>Phnom Penh</option>
@@ -104,45 +106,22 @@
             </div>
 
 
-            <a  class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Search <i class="fas fa-search"></i></span>
+            <a  class="btn btn-primary btn-xl text-uppercase btn-search" href="#services">ស្វែងរក <i class="fas fa-search"></i></span>
             </a>
         </div>
     </div>
 </header>
 
-<!-- Services -->
+<!-- Welcome -->
 <section class="page-section" id="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Services</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <div class="col-md-6 col-sm-12">
+                <h3 style="font-family: 'Khmer OS Muol'"><u>ស្វាគមន៍មកកាន់</u><b style="color: #fed136"> បូរី ប៉េងហួត</b></h3><br>
+                <p>សូមស្វាគមន៍មកកាន់ បុរី ប៉េង ហួត ដែលជា ក្រុមហ៊ុនឈានមុខគេ លើការអភិវឌ្ឍន៍ សំណង់ និង លំនៅដ្ឋាននៅក្នុងប្រទេសកម្ពុជា។ ជាមួយនឹងបទពិសោធន៍ជាង១០ឆ្នាំ ក្នុងការអភិវឌ្ឍន៍បុរី ជាច្រើនប្រកប ដោយបទដ្ឋាន រួមជាមួយគុណភាពខ្ពស់ នៅក្នុងទីផ្សារដែលមានសក្តានុពល និងស្ថិតនៅចំបេះដូងនៃបណ្តាប្រទេសក្នុងតំបន់អាស៊ីអាគ្នេយ៍។ យើងខ្ញុំពិតជាមានមោទនភាព ក្រៃលែងដែលអាចក្លាយជាជម្រើសដៃគូដ៏ល្អសម្រាប់ លោកអ្នក។</p>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-                <h4 class="service-heading">E-Commerce</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-            </div>
-            <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-                <h4 class="service-heading">Responsive Design</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-            </div>
-            <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-                <h4 class="service-heading">Web Security</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <div class="col-md-6 col-sm-12 polaroid">
+                <img src="/images/welcome.jpg" class="img-fluid" width="100%">
             </div>
         </div>
     </div>
@@ -153,95 +132,95 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-heading text-uppercase"><u>គម្រោង</u></h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-top: 15px">
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                <a class="portfolio-link" href="#portfolioModal1">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <i class="fas fa-eye fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="/images/project/project-01.png" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Threads</h4>
-                    <p class="text-muted">Illustration</p>
+                    <h5>ប៉ូឡារីស</h5>
+{{--                    <p class="text-muted">Illustration</p>--}}
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                <a class="portfolio-link" href="#portfolioModal2">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <i class="fas fa-eye fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="/images/project/project-02.png" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Explore</h4>
-                    <p class="text-muted">Graphic Design</p>
+                    <h5>សួនកំសាន្តបែបអ៊ឺរ៉ុប</h5>
+{{--                    <p class="text-muted">Graphic Design</p>--}}
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                <a class="portfolio-link" href="#portfolioModal3">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <i class="fas fa-eye fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="/images/project/project-03.png" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Finish</h4>
-                    <p class="text-muted">Identity</p>
+                    <h5>ដឺស្ដា មេរាហ្គាដិន</h5>
+{{--                    <p class="text-muted">Identity</p>--}}
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                <a class="portfolio-link" href="#portfolioModal4">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <i class="fas fa-eye fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="/images/project/project-04.png" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Lines</h4>
-                    <p class="text-muted">Branding</p>
+                    <h5>ដឺស្តា ផ្លាទីនីម ម៉ាស្ទើរី</h5>
+{{--                    <p class="text-muted">Branding</p>--}}
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                <a class="portfolio-link" href="#portfolioModal3">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <i class="fas fa-eye fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="/images/project/project-03.png" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Southwest</h4>
-                    <p class="text-muted">Website Design</p>
+                    <h5>ដឺស្ដា មេរាហ្គាដិន</h5>
+                    {{--                    <p class="text-muted">Identity</p>--}}
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                <a class="portfolio-link" href="#portfolioModal4">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <i class="fas fa-eye fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="/images/project/project-04.png" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Window</h4>
-                    <p class="text-muted">Photography</p>
+                    <h5>ដឺស្តា ផ្លាទីនីម ម៉ាស្ទើរី</h5>
+                    {{--                    <p class="text-muted">Branding</p>--}}
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -251,170 +230,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 style="font-family: 'Khmer OS Muol'"><u class="text-warning">អំពីពួកយើង</u></h3><br>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
-                        </div>
-                    </li>
-                </ul>
+            <div class="col-md-6 col-sm-12 polaroid">
+                <img src="/images/welcome.jpg" class="img-fluid" width="100%">
             </div>
-        </div>
-    </div>
-</section>
+            <div class="col-md-6 col-sm-12">
 
-<!-- Team -->
-<section class="bg-light page-section" id="team">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h5><u>ទស្សនវិស័យ​</u></h5>
+                <p>
+                    ក្លាយជាក្រុមហ៊ុនឈានមុខគេក្នុងវិស័យអចលនទ្រព្យនិងជាក្រុមហ៊ុនដែលល្អបំផុតនៅក្នុងប្រទេសកម្ពុជា។
+
+                </p>
+                <h5 style="padding-top: 15px"><u>បេសកម្ម</u></h5>
+                <p>
+                    ១. អភិវឌ្ឍលំនៅដ្ឋាននិងផលិតផលជាមួយនឹងភាពច្នៃប្រឌិតថ្មីប្រកបដោយគុណភាព សុវត្ថិភាព និង សោភណ្ឌភាព
+                    ដែលលើសពីការរំពឹងទុក របស់អតិថិជន។
+                    <br>
+                    ២. បង្កើតទំនាក់ទំនងយូរអង្វែងជាមួយអតិថិជនដោយផ្ដល់ជូននូវសេវាកម្មល្អបំផុត ទាំងមុន និង ក្រោយពេលលក់។
+                    <br>
+                    ៣. ក្លាយជាក្រុមហ៊ុននៃក្ដីស្រមៃ របស់អ្នកទាំងអស់គ្នា។
+                </p>
             </div>
+
         </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                    <h4>Kay Garland</h4>
-                    <p class="text-muted">Lead Designer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-                    <h4>Larry Parker</h4>
-                    <p class="text-muted">Lead Marketer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-                    <h4>Diana Pertersen</h4>
-                    <p class="text-muted">Lead Developer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-            </div>
-        </div>
+
     </div>
 </section>
 
