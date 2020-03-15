@@ -47,12 +47,22 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio"><strong>អំពីក្រុមហ៊ុន</strong></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about"><strong>About</strong></a>
-                </li>
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <strong>គម្រោង</strong>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <a class="dropdown-item" href="#">ប៉ូឡារីស</a>
+                        <a class="dropdown-item" href="#">សួនកំសាន្តបែបអ៊ឺរ៉ុប</a>
+                        <a class="dropdown-item" href="#">ដឺស្ដា មេរាហ្គាដិន</a>
+                        <a class="dropdown-item" href="#">ដឺស្តា ផ្លាទីនីម ម៉ាស្ទើរី</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong>ប្រភេទផ្ទះ</strong>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
@@ -132,7 +142,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="section-heading text-uppercase"><u>គម្រោង</u></h3>
+                <h3 class="section-heading text-uppercase text-warning"><u>គម្រោង</u></h3>
             </div>
         </div>
         <div class="row" style="padding-top: 15px">
@@ -260,91 +270,92 @@
     </div>
 </section>
 
-<!-- Clients -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact -->
-<section class="page-section" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<!-- Contact -->--}}
+{{--<section class="page-section" id="contact">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-12 text-center">--}}
+{{--                <h2 class="section-heading text-uppercase">Contact Us</h2>--}}
+{{--                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-12">--}}
+{{--                <form id="contactForm" name="sentMessage" novalidate="novalidate">--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col-md-6">--}}
+{{--                            <div class="form-group">--}}
+{{--                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">--}}
+{{--                                <p class="help-block text-danger"></p>--}}
+{{--                            </div>--}}
+{{--                            <div class="form-group">--}}
+{{--                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">--}}
+{{--                                <p class="help-block text-danger"></p>--}}
+{{--                            </div>--}}
+{{--                            <div class="form-group">--}}
+{{--                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">--}}
+{{--                                <p class="help-block text-danger"></p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-md-6">--}}
+{{--                            <div class="form-group">--}}
+{{--                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>--}}
+{{--                                <p class="help-block text-danger"></p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="clearfix"></div>--}}
+{{--                        <div class="col-lg-12 text-center">--}}
+{{--                            <div id="success"></div>--}}
+{{--                            <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </form>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 
 <!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="row align-items-center">
+<footer class="footer" style="background-color:#fed136">
+    <div class="container" >
+        <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; Your Website 2019</span>
+{{--                <span class="copyright">Copyright &copy; Your Website 2019</span>--}}
+                <b><h5 style="color: #ffffff;text-align: left;" class="footer-text">ទំព័រផ្សេងៗ</h5></b>
+                <ul style="list-style-type:none;padding-top: 15px" class="footer-text">
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">អំពីពួកយើង</li></a>
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">សាររបស់អគ្គនាយិកា</li></a>
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">គម្រោង</li></a>
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">ប្រភេទផ្ទះ</li></a>
+                </ul>
             </div>
             <div class="col-md-4">
+                {{--                <span class="copyright">Copyright &copy; Your Website 2019</span>--}}
+                <b><h5 style="color: #ffffff;text-align: left;" class="footer-text">គម្រោង</h5></b>
+                <ul style="list-style-type:none;padding-top: 15px" class="footer-text">
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">សួនកំសាន្តបែបអ៊ឺរ៉ុប</li></a>
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">ដឺស្ដា មេរាហ្គាដិន</li></a>
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">ដឺស្តា ផ្លាទីនីម ម៉ាស្ទើរី</li></a>
+                    <a href="#" style="text-decoration:none;"><li style="text-align: left;margin-top: 10px">ដឺស្ដា មេរាហ្គាដិន</li></a>
+                </ul>
+            </div>
+
+            <div class="col-md-4"​>
+                <b><h5 style="color: #ffffff;text-align: left;" class="footer-text">ទំនាក់ទំនង</h5></b>
+                <p style="padding-top: 15px;color: #ffffff;text-align: justify"><i class="fas fa-map-marker-alt"></i> អគារលេខ២៦៦ ផ្លូវ ៥៩៨ សង្កាត់ភ្នំពេញថ្មី ខណ្ឌសែនសុខ រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា</p>
+
+                <p style="padding-top: 5px;color: #ffffff;text-align: justify"> <i class="fas fa-phone"></i> (+855) 23 882 745 | 23 6969 699</p>
+                <p style="padding-top: 5px;color: #ffffff;text-align: justify"> <i class="fas fa-envelope"></i> Email: info@penghuoth.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"​>
+            </div>
+            <div class="col-md-4"​>
                 <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
                         <a href="#">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
@@ -354,230 +365,20 @@
                     </li>
                     <li class="list-inline-item">
                         <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                 </ul>
+                <span class="copyright">Copyright &copy; Your Website 2020</span>
             </div>
-            <div class="col-md-4">
-                <ul class="list-inline quicklinks">
-                    <li class="list-inline-item">
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">Terms of Use</a>
-                    </li>
-                </ul>
+            <div class="col-md-4"​>
             </div>
+
         </div>
     </div>
 </footer>
 
 <!-- Portfolio Modals -->
-
-<!-- Modal 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2 class="text-uppercase">Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
-                                <li>Date: January 2017</li>
-                                <li>Client: Threads</li>
-                                <li>Category: Illustration</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 2 -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2 class="text-uppercase">Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
-                                <li>Date: January 2017</li>
-                                <li>Client: Explore</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2 class="text-uppercase">Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
-                                <li>Date: January 2017</li>
-                                <li>Client: Finish</li>
-                                <li>Category: Identity</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2 class="text-uppercase">Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
-                                <li>Date: January 2017</li>
-                                <li>Client: Lines</li>
-                                <li>Category: Branding</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 5 -->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2 class="text-uppercase">Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
-                                <li>Date: January 2017</li>
-                                <li>Client: Southwest</li>
-                                <li>Category: Website Design</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 6 -->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2 class="text-uppercase">Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
-                                <li>Date: January 2017</li>
-                                <li>Client: Window</li>
-                                <li>Category: Photography</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times"></i>
-                                Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="/new/vendor/jquery/jquery.min.js"></script>
@@ -592,7 +393,37 @@
 
 <!-- Custom scripts for this template -->
 <script src="/new/js/agency.min.js"></script>
+<script>
+    const $dropdown = $(".dropdown");
+    const $dropdownToggle = $(".dropdown-toggle");
+    const $dropdownMenu = $(".dropdown-menu");
+    const showClass = "show";
 
+    $(window).on("load resize", function() {
+        if (this.matchMedia("(min-width: 768px)").matches) {
+            $dropdown.hover(
+                function() {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function() {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
+            );
+        } else {
+            $dropdown.off("mouseenter mouseleave");
+        }
+    });
+
+    $('.search_area').change(function () {
+        $(this).find('option').css('background', 'transparent');
+    }).trigger('change');
+</script>
 </body>
 
 </html>
