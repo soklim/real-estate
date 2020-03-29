@@ -1,30 +1,14 @@
-{{--<script>--}}
-{{--    $(document).on("scroll", function(){--}}
-{{--        if--}}
-{{--        ($(document).scrollTop() > 86){--}}
-{{--            $("#banner").addClass("shrink");--}}
-{{--        }--}}
-{{--        else--}}
-{{--        {--}}
-{{--            $("#banner").removeClass("shrink");--}}
-{{--        }--}}
-{{--    });--}}
-{{--</script>--}}
 
-
-<script src="/assets/web/assets/jquery/jquery.min.js"></script>
-<script src="/assets/tether/tether.min.js"></script>
-<script src="/assets/popper/popper.min.js"></script>
-<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/dropdown/js/script.min.js"></script>
-<script src="/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
-<script src="/assets/viewport-checker/jquery.viewportchecker.js"></script>
-<script src="/assets/smooth-scroll/smooth-scroll.js"></script>
-<script src="/assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
-<script src="/assets/social-likes/social-likes.js"></script>
-<script src="/assets/jarallax/jarallax.min.js"></script>
-<script src="/assets/theme/js/script.js"></script>
-<script src="/assets/formoid/formoid.min.js"></script>
-
-
-<input name="animation" type="hidden">
+<!-- Vendor JS Files -->
+<script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="/assets/vendor/php-email-form/validate.js"></script>
+<script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/assets/vendor/venobox/venobox.min.js"></script>
+<script src="/assets/vendor/aos/aos.js"></script>
+<script src="/assets/js/all.min.js"></script>
+<script src="/assets/js/fontawesome.min.js"></script>
+<!-- Template Main JS File -->
+<script src="/assets/js/main.js"></script>

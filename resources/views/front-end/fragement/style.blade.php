@@ -1,33 +1,29 @@
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>Real Estate</title>
-<link rel="icon" href="/images//header/express.png">
+<title>Borey Peng Huoth</title>
+<meta content="" name="descriptison">
+<meta content="" name="keywords">
 
-<!-- CSRF Token -->
-<meta name="csrf-token" content="{{ csrf_token() }}">
+<!-- Favicons -->
+<link href="https://boreypenghuoth.com/wp-content/uploads/2019/05/borey-logo.png" rel="icon">
+<link href="https://boreypenghuoth.com/wp-content/uploads/2019/05/borey-logo.png" rel="apple-touch-icon">
 
-<!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
-<link href="https://fonts.googleapis.com/css?family=Hanuman&display=swap" rel="stylesheet">
-{{--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>--}}
-<!-- Styles -->
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<!-- Fonts -->
-<link rel="stylesheet" href="/assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-<link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css">
-<link rel="stylesheet" href="/assets/tether/tether.min.css">
-<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css">
-<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css">
-<link rel="stylesheet" href="/assets/dropdown/css/style.css">
-<link rel="stylesheet" href="/assets/animate.css/animate.min.css">
-<link rel="stylesheet" href="/assets/socicon/css/styles.css">
-<link rel="stylesheet" href="/assets/theme/css/style.css">
-<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+<link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
+<link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="/assets/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/fontawesome.min.css" rel="stylesheet">
+<!-- Template Main CSS File -->
+<link href="/assets/css/style.css" rel="stylesheet">
+
 
 <style>
 body{

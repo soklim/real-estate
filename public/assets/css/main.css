@@ -1,0 +1,60 @@
+﻿.intro-lead-in {
+    -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.01em;
+    -webkit-text-stroke-color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+.js-scroll-trigger{
+    -webkit-text-fill-color: #ffcc00; /* Will override color (regardless of order) */
+    text-shadow: 2px 2px 4px #000000;
+}
+/*.footer-text{*/
+/*    text-shadow: 0.5px 0.5px 1px #000000;*/
+/*}*/
+.btn-search{
+    -webkit-text-fill-color: #ffffff; /* Will override color (regardless of order) */
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.polaroid img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+select {
+
+    text-align-last: center;
+    text-align: center;
+}
+.search_area select{
+    font-size: 18px;
+    background-color:transparent;
+    color: white;
+    height: calc(2.2em + .75rem + 2px);
+    border-radius:4px;
+    box-shadow: 2px 2px 8px #999;
+    cursor: pointer;
+}
+
+.search_area select option{
+    background-color:transparent;
+    -webkit-appearance: none !important;
+}
+
+
+.dropdown-menu > a:hover, .dropdown-menu > a:focus {
+    -webkit-text-fill-color: #000000;
+    background:none;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:focus{
+    -webkit-text-fill-color: #ffffff;
+}
+
+
+.dropdown-menu > a{
+
+    -webkit-text-fill-color: #ffcc00;
+}
+div.img-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
