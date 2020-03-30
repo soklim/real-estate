@@ -16,6 +16,13 @@ class UserController extends Controller
      */
     public function index(User $model)
     {
-        return view('users.index', ['users' => $model->paginate(15)]);
+        $user = User::all();
+        return view('users.index', ['users' => $model->paginate(15)],compact('user'));
+    }
+    public function destroy(User  $user)
+    {
+        $user->delete();
+
+        return redirect()->route('user.index')->withStatus(__('User successfully deleted.'));
     }
 }

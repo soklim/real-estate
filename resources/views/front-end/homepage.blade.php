@@ -9,22 +9,29 @@
 {{--            <a href="#about" class="btn-get-started scrollto">Get Started</a>--}}
 {{--        </div>--}}
         <div class="container-fluid" style="padding: 0px; margin: 0px;">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-{{--                <ol class="carousel-indicators">--}}
-{{--                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>--}}
-{{--                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>--}}
-{{--                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>--}}
-{{--                </ol>--}}
-                <div class="carousel-inner">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner carousel-zoom carousel-fade">
                     <div class="carousel-item active">
-                        <img class="d-block w-100 img-fluid m-100" src="/images/slider/slider1.jpg" height="400px"  alt="First slide">
+                        <img class="img-responsive" src="/images/slider/slider1.png" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100 img-fluid m-100" src="/images/slider/slider2.jpg" height="400px"  alt="Second slide">
+                        <img class="img-responsive" src="/images/slider/slider2.png" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100 img-fluid m-100" src="/images/slider/slider3.jpg" height="400px"  alt="Third slide">
+                        <img class="img-responsive" src="/images/slider/slider3.png" alt="">
+
                     </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#sg-carousel" data-slide="prev">‹</a>
+                    <a class="carousel-control right" href="#sg-carousel" data-slide="next">›</a>
                 </div>
             </div>
         </div>
@@ -265,5 +272,14 @@
         </section><!-- End Contact Section -->
 
     </main><!-- End #main -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    jQuery('#myCarousel').bind('mousewheel', function(e) {
+        if(e.originalEvent.wheelDelta /120 > 0) {
+            $(this).carousel('next');
+        } else {
+            $(this).carousel('prev');
+        }
+    });
+</script>
 @stop
