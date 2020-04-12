@@ -16,6 +16,13 @@
     <link href="{{ asset('material') }}/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{ asset('material') }}/demo/demo.css" rel="stylesheet" />
+        <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
     </head>
     <body class="{{ $class ?? '' }}">
         @auth()
@@ -28,79 +35,6 @@
             @include('layouts.page_templates.guest')
         @endguest
 
-{{--        <div class="fixed-plugin">--}}
-{{--          <div class="dropdown show-dropdown">--}}
-{{--            <a href="#" data-toggle="dropdown">--}}
-{{--              <i class="fa fa-cog fa-2x"> </i>--}}
-{{--            </a>--}}
-{{--            <ul class="dropdown-menu">--}}
-{{--              <li class="header-title"> Sidebar Filters</li>--}}
-{{--              <li class="adjustments-line">--}}
-{{--                <a href="javascript:void(0)" class="switch-trigger active-color">--}}
-{{--                  <div class="badge-colors ml-auto mr-auto">--}}
-{{--                    <span class="badge filter badge-purple " data-color="purple"></span>--}}
-{{--                    <span class="badge filter badge-azure" data-color="azure"></span>--}}
-{{--                    <span class="badge filter badge-green" data-color="green"></span>--}}
-{{--                    <span class="badge filter badge-warning active" data-color="orange"></span>--}}
-{{--                    <span class="badge filter badge-danger" data-color="danger"></span>--}}
-{{--                    <span class="badge filter badge-rose" data-color="rose"></span>--}}
-{{--                  </div>--}}
-{{--                  <div class="clearfix"></div>--}}
-{{--                </a>--}}
-{{--              </li>--}}
-{{--              <li class="header-title">Images</li>--}}
-{{--              <li class="active">--}}
-{{--                <a class="img-holder switch-trigger" href="javascript:void(0)">--}}
-{{--                  <img src="{{ asset('material') }}/img/sidebar-1.jpg" alt="">--}}
-{{--                </a>--}}
-{{--              </li>--}}
-{{--              <li>--}}
-{{--                <a class="img-holder switch-trigger" href="javascript:void(0)">--}}
-{{--                  <img src="{{ asset('material') }}/img/sidebar-2.jpg" alt="">--}}
-{{--                </a>--}}
-{{--              </li>--}}
-{{--              <li>--}}
-{{--                <a class="img-holder switch-trigger" href="javascript:void(0)">--}}
-{{--                  <img src="{{ asset('material') }}/img/sidebar-3.jpg" alt="">--}}
-{{--                </a>--}}
-{{--              </li>--}}
-{{--              <li>--}}
-{{--                <a class="img-holder switch-trigger" href="javascript:void(0)">--}}
-{{--                  <img src="{{ asset('material') }}/img/sidebar-4.jpg" alt="">--}}
-{{--                </a>--}}
-{{--              </li>--}}
-{{--              <li class="button-container">--}}
-{{--                <a href="https://www.creative-tim.com/product/material-dashboard-laravel" target="_blank" class="btn btn-primary btn-block">Free Download</a>--}}
-{{--              </li>--}}
-{{--              <!-- <li class="header-title">Want more components?</li>--}}
-{{--                  <li class="button-container">--}}
-{{--                      <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">--}}
-{{--                        Get the pro version--}}
-{{--                      </a>--}}
-{{--                  </li> -->--}}
-{{--              <li class="button-container">--}}
-{{--                <a href="https://material-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html" target="_blank" class="btn btn-default btn-block">--}}
-{{--                  View Documentation--}}
-{{--                </a>--}}
-{{--              </li>--}}
-{{--              <li class="button-container">--}}
-{{--                <a href="https://www.creative-tim.com/product/material-dashboard-pro-laravel" target="_blank" class="btn btn-danger btn-block btn-round">--}}
-{{--                  Upgrade to PRO--}}
-{{--                </a>--}}
-{{--              </li>--}}
-{{--              <li class="button-container github-star">--}}
-{{--                <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard-laravel" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>--}}
-{{--              </li>--}}
-{{--              <li class="header-title">Thank you for 95 shares!</li>--}}
-{{--              <li class="button-container text-center">--}}
-{{--                <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>--}}
-{{--                <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>--}}
-{{--                <br>--}}
-{{--                <br>--}}
-{{--              </li>--}}
-{{--            </ul>--}}
-{{--          </div>--}}
-{{--        </div>--}}
         <!--   Core JS Files   -->
         <script src="{{ asset('material') }}/js/core/jquery.min.js"></script>
         <script src="{{ asset('material') }}/js/core/popper.min.js"></script>
@@ -134,8 +68,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
         <!-- Library for adding dinamically elements -->
         <script src="{{ asset('material') }}/js/plugins/arrive.min.js"></script>
-        <!--  Google Maps Plugin    -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE'"></script>
+
         <!-- Chartist JS -->
         <script src="{{ asset('material') }}/js/plugins/chartist.min.js"></script>
         <!--  Notifications Plugin    -->

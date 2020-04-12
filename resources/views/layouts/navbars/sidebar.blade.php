@@ -5,8 +5,8 @@
       Tip 2: you can also add an image using data-image tag
   -->
   <div class="logo">
-    <a href="https://creative-tim.com/" class="simple-text logo-normal">
-      {{ __('Creative Tim') }}
+    <a href="/home" class="simple-text logo-normal">
+      {{ __('PH Dashboard') }}
     </a>
   </div>
   <div class="sidebar-wrapper">
@@ -20,7 +20,7 @@
 
     <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('user.index') }}">
-            <i class="material-icons">content_paste</i>
+            <i class="fa fa-user"></i>
             <p>{{ __('User Management') }}</p>
         </a>
     </li>

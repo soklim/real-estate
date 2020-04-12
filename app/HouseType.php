@@ -9,10 +9,13 @@ class HouseType extends Model
     //
     protected $fillable=[
 
-        'house_type_name',
+        'house_type_name_kh',
+        'house_type_name_en',
         'abbreviation',
         'house_type_code',
-        'is_deleted'
+        'is_deleted',
+        'desc_kh',
+        'desc_en'
 
     ];
 
